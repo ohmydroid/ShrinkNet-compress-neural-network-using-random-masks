@@ -19,7 +19,7 @@ from torchsummaryX import summary
 parser = argparse.ArgumentParser(description='PyTorch CIFAR Training')
 
 ## Settings for model
-parser.add_argument('-m', '--model', default='shrink20', help='Model Type.')
+parser.add_argument('-m', '--model', default='shrink56', help='Model Type.')
 parser.add_argument('-ws','--width_scaler', default=1, type=int, help='adjust network width')
 parser.add_argument('--expansion', default=1, type=int, help='expansion')
 parser.add_argument('-sr','--shrink_ratio', default=0.5, type=float, help='shrink ratio')
