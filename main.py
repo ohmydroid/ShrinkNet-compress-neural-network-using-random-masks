@@ -172,7 +172,7 @@ torch.save(net.state_dict(),t_path)
 #net.load_state_dict(torch.load(t_path))
 # Prun ResNets with random channel-wise masks
 #for resnet56
-shrink_ratio = [0.75]*num_blocks+[0.5]*num_blocks+[0.5]*num_blocks
+shrink_ratio = [0.75]*num_blocks+[0.75]*num_blocks+[0.5]*num_blocks
 net.shrinknet(shrink_ratio=shrink_ratio, freeze=False)#, mask_mode='fixed')
 
 optimizer = optim.SGD(filter(lambda p: p.requires_grad, net.parameters()), lr=args.lr,momentum=0.9,nesterov=True, weight_decay=args.weight_decay)
