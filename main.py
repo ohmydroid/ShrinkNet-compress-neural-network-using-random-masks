@@ -33,8 +33,6 @@ parser.add_argument('-g', '--multi_gpu', default=0, help='Model Type.')
 parser.add_argument('--workers', default=4, type=int, help='number of workers')
 parser.add_argument('--seed', default=666, type=int, help='number of random seed')
 
-parser.add_argument('--schedule', nargs='+', default=[100, 150, 180], type=int)
-parser.add_argument('-opt', '--optmizer', default='cos',choices=['cos', 'step'], help='Dataset name.')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 parser.add_argument('--gamma', default=0.1, type=float, help='learning rate gamma')
 parser.add_argument('-wd','--weight_decay', default=1e-4, type=float)
