@@ -181,6 +181,6 @@ for epoch in range(start_epoch, start_epoch+(args.epoch)):
     test(epoch)
     scheduler.step()
 
-s_path='./checkpoint/seed_{}_model_{}_dataset_{}_expansion_{}_width_{}_student_shrink_ratio_{}.pth'.format(args.seed, args.model, args.dataset, args.expansion, args.width_scaler, shrink_ratio)
+s_path='./checkpoint/seed_{}_model_{}_dataset_{}_expansion_{}_width_{}_student.pth'.format(args.seed, args.model, args.dataset, args.expansion, args.width_scaler)
 torch.save(net.state_dict(),s_path)
 
