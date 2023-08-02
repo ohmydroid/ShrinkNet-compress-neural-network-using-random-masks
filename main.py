@@ -26,7 +26,7 @@ parser.add_argument('-sr','--shrink_ratio', default=0.5, type=float, help='shrin
 
 ## Settings for data
 parser.add_argument('-d', '--dataset', default='cifar10',choices=['cifar10', 'cifar100'], help='Dataset name.')
-parser.add_argument('--data_dir', default='/home/onedroid/apps/projects/pytorh-vision/data', help='data path')
+parser.add_argument('--data_dir', default='./data', help='data path')
 
 ## Settings for fast training
 parser.add_argument('-g', '--multi_gpu', default=0, help='Model Type.')
