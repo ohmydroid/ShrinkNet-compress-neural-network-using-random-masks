@@ -9,6 +9,6 @@ python main.py -m shrink56
 ```
 
 # To do
-[x] cut weights to accelerate model inference.
-[x] Add function of FLOPs and Params calculation.
+- [x] cut weights to accelerate model inference.
+- [x] Add function of FLOPs and Params calculation.
 
