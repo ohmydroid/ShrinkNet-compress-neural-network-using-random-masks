@@ -25,8 +25,8 @@ class BasicBlock(nn.Module):
                                     )
         if self.shrink_state:
 
-           self.inner_mask = torch.bernoulli(torch.empty(expansion*planes).fill_(shrink_ratio)).view(1,-1,1,1)
-           self.out_mask   = torch.bernoulli(torch.empty(planes).fill_(shrink_ratio)).view(1,-1,1,1)
+           self.inner_mask = torch.bernoulli(torch.empty(expansion*planes).fill_(self.shrink_ratio)).view(1,-1,1,1)
+           self.out_mask   = torch.bernoulli(torch.empty(planes).fill_(self.shrink_ratio)).view(1,-1,1,1)
 
         self.shortcut = nn.Sequential()
 
